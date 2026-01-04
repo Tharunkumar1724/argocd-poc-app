@@ -1,11 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: poc-service
+  name: fastapi-svc
 spec:
   selector:
-    app: poc
+    app: fastapi
   ports:
-    - port: 80
-      targetPort: 80
-  type: ClusterIP
+  - port: 80
+    targetPort: 8000
