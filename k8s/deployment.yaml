@@ -13,8 +13,7 @@ spec:
         app: poc
     spec:
       containers:
-      - name: poc
-        image: nginx:1.25
+      - name: api
+        image: tharunk132/fastapi-poc:1.0
         ports:
-        - containerPort: 80
-
+        - containerPort: 8000
